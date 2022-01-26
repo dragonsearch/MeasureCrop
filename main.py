@@ -83,12 +83,12 @@ while True:
             if not confirm: continue
             
             #PROMP OF CONFIRMATION FOR NAME
-            unliked = False
+            disliked = False
             confirm = False
             while not confirm:
                 if use_wordlist:
-                    if unliked: print("Type a name for the area:")
-                    boxname = wordlist[nextword] if not unliked else input()
+                    if disliked: print("Type a name for the area:")
+                    boxname = wordlist[nextword] if not disliked else input()
                 else:
                     print("Type a name for the area:")
                     boxname = input()
@@ -103,7 +103,7 @@ while True:
                             confirm = True
                             break;
                     if yes_no == "n":
-                            unliked = True
+                            disliked = True
                             break;
 
 
